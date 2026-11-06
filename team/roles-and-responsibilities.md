@@ -1,16 +1,16 @@
 ﻿# Roles and Responsibilities — Manager Library
 
 Separation of responsibilities by workstream. Each workstream maps to one repository and a group of tasks from `tasks.md`.
-Fill in the **Assigned to** column with the team member responsible.
+This is an individual exam: all roles are held by Johan117z, working through them in the order set by the MoSCoW priorities.
 
 | Role | Repository | Tasks | Responsibilities | Assigned to |
 |---|---|---|---|---|
-| Backend lead | `api` | T-01 to T-17 | Laravel API: domain, use cases, persistence, auth, contract, concurrency | _fill in_ |
-| Frontend developer | `app` | T-22 | React app: login, catalog, members, lend, return, overdue, report | _fill in_ |
-| Infrastructure / DevOps | `infra` | T-20 | Docker Compose, network, volumes, empty PostgreSQL, `.env.example` | _fill in_ |
-| Data & tooling | `tool` | T-21 | Demo seeder through the API (>= 40 books, 10 members, 15 loans, 3 overdue) | _fill in_ |
-| Static site | `page` | T-23 | Public presentation site, responsive, no API calls | _fill in_ |
-| Documentation & QA | `docs` | all | `team/` documents, spec decisions, running each task's evidence, final delivery check | _fill in_ |
+| Backend lead | `api` | T-01 to T-17 | Laravel API: domain, use cases, persistence, auth, contract, concurrency | Johan117z |
+| Frontend developer | `app` | T-22 | React app: login, catalog, members, lend, return, overdue, report | Johan117z |
+| Infrastructure / DevOps | `infra` | T-20 | Docker Compose, network, volumes, empty PostgreSQL, `.env.example` | Johan117z |
+| Data & tooling | `tool` | T-21 | Demo seeder through the API (>= 40 books, 10 members, 15 loans, 3 overdue) | Johan117z |
+| Static site | `page` | T-23 | Public presentation site, responsive, no API calls | Johan117z |
+| Documentation & QA | `docs` | all | `team/` documents, spec decisions, running each task's evidence, final delivery check | Johan117z |
 
 ## Cross-cutting responsibilities
 
@@ -29,3 +29,4 @@ Fill in the **Assigned to** column with the team member responsible.
 | `admin` | Everything: books, members, librarians, reports |
 | `librarian` | Loans, returns, overdue, members, catalog queries |
 | Member | Data only; does not log in |
+
