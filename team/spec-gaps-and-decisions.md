@@ -20,3 +20,9 @@ decision taken and why, so the choices are traceable (SDD: when the spec is sile
 - Password hashing: Argon2id (Laravel supports `argon2id` in `config/hashing.php`).
 - pytest -> PHPUnit/Pest; `import-linter` architecture tests -> a PHP architecture test (e.g. Pest arch tests) if time allows (T-19, Could).
 - Error messages shown to users stay in **Spanish** as the API contract requires; code, columns and routes are in English.
+
+## Additional gap found later
+
+| # | Gap | Decision | Reason |
+|---|---|---|---|
+| 8 | Task T-21 asks the seeder to create 3 overdue loans "through the API", but `POST /loans` has no loan-date field and the API clock is the server clock. | Use the `Clock` port already planned in D-05 with an optional test-only environment variable (e.g. `FAKE_NOW`) that the seeder run sets for those 3 loans. It is ignored unless the app environment is `local` or `testing`. | Keeps the API contract unchanged, matches D-05 (clock as a port), and never affects production. |
